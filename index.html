@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<head>
-  <title> RANDOM PICKER </title>
- </head>
+
      <body>
     <h1> INTERROGA QUALCUNO! <h1/>
    < button onclick="document.getElementById("risult").innerHTML= interrogato[rnd(0, 3 -1)]> bottone </button>
   < h2 id="risult"></h2>
-<script>
+ 
+            <script>
   var interrogato = ["1", "2", "3"];
   function rnd (primo, ultimo) { 
   return math.floor(math.random()* (ultimo - primo + 1 )) + primo;
