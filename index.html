@@ -1,45 +1,22 @@
 <html>
 <head>
   <title> RANDOM PICKER </title>
+  < button onclick="document.getElementById("risult").innerHTML= interrogato[rnd(0, 3 -1)]> bottone </button>
+  < h1 id="risult"></h1>
   <style>
     body {background-color: yellow;}
     #titolo {color: black;}
   </style>
 </head>
-  <body>
+     <body>
     <h1> INTERROGA QUALCUNO! <h1/>
-      <script>
-//var myArray = [
-  "Apples",
-  "Bananas",
-  "Pears"
-];
+<script>
+  var interrogato = ["1", "2", "3"];
+  function rnd (primo, ultimo) { 
+  return math.floor(math.random()* (ultimo - primo + 1 )) + primo;
+    }    
 
-//var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-//document.body.innerHTML = randomItem;
-        
-var random_quotes = new Array ( );        
-random_quotes[0] = "If music be the food of love, play on";
-random_quotes[1] = "When shall we three meet again...?";
-random_quotes[2] = "What a piece of work is man!";
-random_quotes[3] = "There's daggers in men's smiles";
-random_quotes[4] = "Alas, poor Yorick! I knew him, Horatio";
-random_quotes[5] = "Time shall unfold what plaited cunning hides";
-random_quotes[6] = "Goodnight, goodnight! Parting is such sweet sorrow";
-random_quotes[7] = "Friends, Romans, countrymen, lend me your ears";
-random_quotes[8] = "I am dying, Egypt, dying";
-random_quotes[9] = "Get thee to a nunn'ry";
-
-// Pick a random quote from the list,
-// and set the 'random-quote' paragraph content to that quote
-
-function pick_quote ( )
-{
-  document.getElementById("random-quote").innerHTML = random_quotes[rand(10)-1];
-}
-  <input type="button" value="Guess" onclick="pick_quote()" />        
-  
-  </script>
-  </body>
+</script>
+      </body>
 
 </html>
