@@ -7,9 +7,9 @@
  
 <script>
  var interrogato = ["1", "2", "3"];
- function rnd (primo, ultimo) { 
- return math.floor(math.random()* (ultimo - primo + 1 )) + primo;
- document.getElementById("risult").innerHTML= interrogato[rnd(0, 3 -1)]
+ function rnd() { 
+ var x = Math.floor(Math.random()* interrogato.length );
+ document.getElementById("risult").innerHTML= interrogato[x]
   }    
 </script>
 </body>
