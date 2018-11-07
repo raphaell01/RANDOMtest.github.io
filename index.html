@@ -2,15 +2,15 @@
 
 <body>
  <h1> INTERROGA QUALCUNO! <h1/>
- < button onclick="document.getElementById("risult").innerHTML= interrogato[rnd(0, 3 -1)]> bottone </button>
+ <button onclick="rnd()"> bottone </button>
  <h2 id="risult"></h2>
  
 <script>
  var interrogato = ["1", "2", "3"];
  function rnd (primo, ultimo) { 
  return math.floor(math.random()* (ultimo - primo + 1 )) + primo;
+ document.getElementById("risult").innerHTML= interrogato[rnd(0, 3 -1)]
   }    
-
 </script>
 </body>
 
